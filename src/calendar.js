@@ -260,8 +260,7 @@ function curMonth() {
     let monthName = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
     let today = new Date();
     let month = today.getMonth();
-    let listedMonth = document.querySelector(".calendar h2");
-    listedMonth.textContent = monthName[month];
+    return monthName[month];
 }
 
 
