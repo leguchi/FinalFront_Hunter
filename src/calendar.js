@@ -105,7 +105,8 @@ function dayIncluded() {
         case 'Mo':
             console.log('mo');
             for (let i = 0; i < numOfDays[month]; i++) {
-                document.querySelectorAll(".calendar table tbody tr td")[i].classList.toggle(`prev-month`);
+                console.log(document.querySelectorAll(".calendar table tbody tr td"));
+                document.querySelectorAll(".calendar table tbody tr td")[i].style.color = "#A1A5A1";;
                 document.querySelectorAll(".calendar table tbody tr td")[i].textContent = `${i + 1}`;
             }
             break;
@@ -246,6 +247,57 @@ function dayIncluded() {
             break;
     }
 
+}
+
+function dayIncluded1() {
+    let defaultDisplay = document.querySelector(".calendar h2");
+    let current = new Date();
+    let year = current.getFullYear();
+
+
+    let monthName = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+    let month = monthName.findIndex(i => i == defaultDisplay.textContent);
+    if (month < 9) {
+        month = '0' + (month + 1);
+    }
+    else {
+        month = (month + 1).toString();
+    }
+    let monthStart = new Date(`${year}-${month}-01T00:00:00`);
+    console.log('monthStart', monthStart);
+    month = Number(month) - 1;
+    let weekday = {
+        0: 'Su',
+        1: 'Mo',
+        2: 'Tu',
+        3: 'We',
+        4: 'Th',
+        5: 'Fr',
+        6: 'Sa'
+    };
+    let dow = weekday[monthStart.getDay()];
+    let numOfDaysFeb;
+    if (year % 4 == 0) {
+        numOfDaysFeb = 29;
+    }
+    else {
+        numOfDaysFeb = 28;
+    }
+    let numOfDays = {
+        'January': 31,
+        'February': numOfDaysFeb,
+        'March': 31,
+        'April': 30,
+        'May': 31,
+        'June': 30,
+        'July': 31,
+        'August': 31,
+        'September': 30,
+        'October': 31,
+        'November': 30,
+        'December': 31
+    };
 }
 
 function changeNextMonth() {
