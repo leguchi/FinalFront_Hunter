@@ -24,6 +24,7 @@
 .calendar {
     text-align: center;
     place-self: center;
+    margin: 38px;
 }
 
 .calendar header {

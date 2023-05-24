@@ -3,7 +3,7 @@
 import { Link } from 'react-router-dom';
 import './../../style.css';
 import './../../menu.css';
-import { changeNextMonth, changePrevMonth, curMonth } from '../../calendar';
+import { changeNextMonth, changePrevMonth, curMonth, dayIncluded } from '../../calendar';
 // import './../../index';
 
 
@@ -70,7 +70,7 @@ const HomePageView = () => {
           </div>
         </div>
       </form>
-      <div className="calendar">
+      <div className="calendar">{dayIncluded()}
         <header>
 
           <h2>{curMonth()}</h2>
@@ -101,59 +101,59 @@ const HomePageView = () => {
           <tbody>
 
             <tr>
-              <td className="prev-month">26</td>
-              <td className="prev-month">27</td>
-              <td className="prev-month">28</td>
-              <td className="prev-month">29</td>
-              <td className="prev-month">30</td>
-              <td className="prev-month">31</td>
-              <td className="curMonth">1</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
             </tr>
             <tr>
-              <td className="curMonth">2</td>
-              <td className="curMonth">3</td>
-              <td className="curMonth">4</td>
-              <td className="curMonth">5</td>
-              <td className="curMonth">6</td>
-              <td className="curMonth">7</td>
-              <td className="curMonth">8</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
             </tr>
             <tr>
-              <td className="curMonth">9</td>
-              <td className="event curMonth">10</td>
-              <td className="curMonth">11</td>
-              <td className="curMonth">12</td>
-              <td className="curMonth">13</td>
-              <td className="curMonth">14</td>
-              <td className="curMonth">15</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
             </tr>
             <tr>
-              <td className="curMonth">16</td>
-              <td className="curMonth">17</td>
-              <td className="curMonth">18</td>
-              <td className="curMonth">19</td>
-              <td className="curMonth">20</td>
-              <td className="event curMonth">21</td>
-              <td className="curMonth">22</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
             </tr>
 
             <tr>
-              <td className="current-day event curMonth">23</td>
-              <td className="curMonth">24</td>
-              <td className="curMonth">25</td>
-              <td className="curMonth">26</td>
-              <td className="curMonth">27</td>
-              <td className="curMonth">28</td>
-              <td className="curMonth">29</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
             </tr>
             <tr>
-              <td className="curMonth">30</td>
-              <td className="next-month">1</td>
-              <td className="next-month">2</td>
-              <td className="next-month">3</td>
-              <td className="next-month">4</td>
-              <td className="next-month">5</td>
-              <td className="next-month">6</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
             </tr>
 
           </tbody>
