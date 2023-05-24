@@ -70,7 +70,7 @@ const HomePageView = () => {
           </div>
         </div>
       </form>
-      <div className="calendar">{dayIncluded()}
+      <div className="calendar">
         <header>
 
           <h2>{curMonth()}</h2>
