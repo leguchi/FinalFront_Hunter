@@ -281,7 +281,7 @@
   }
   
   .option:nth-child(2) input[type="radio"]:checked ~ .label:before {
-    background-color: #ea4c89;
+    background-color: #000000;
   }
   
   .option:nth-child(2) input[type="radio"]:checked ~ .opt-val {
@@ -289,7 +289,7 @@
   }
   
   .option:nth-child(3) input[type="radio"]:checked ~ .label:before {
-    background-color: #0057ff;
+    background-color: #000000;
   }
   
   .option:nth-child(3) input[type="radio"]:checked ~ .opt-val {
@@ -297,7 +297,7 @@
   }
   
   .option:nth-child(4) input[type="radio"]:checked ~ .label:before {
-    background-color: #32c766;
+    background-color: #000000;
   }
   
   .option:nth-child(4) input[type="radio"]:checked ~ .opt-val {
@@ -305,7 +305,7 @@
   }
   
   .option:nth-child(5) input[type="radio"]:checked ~ .label:before {
-    background-color: #f48024;
+    background-color: #000000;
   }
   
   .option:nth-child(5) input[type="radio"]:checked ~ .opt-val {
@@ -313,7 +313,7 @@
   }
   
   .option:nth-child(6) input[type="radio"]:checked ~ .label:before {
-    background-color: #006400;
+    background-color: #000000;
     border-radius: 0 0 4px 4px;
   }
   
@@ -372,27 +372,27 @@
   
   .option:nth-child(2):hover ~ #option-bg {
     top: 40px;
-    background-color: #ea4c89;
+    background-color: #000000;
   }
   
   .option:nth-child(3):hover ~ #option-bg {
     top: 80px;
-    background-color: #0057ff;
+    background-color: #000000;
   }
   
   .option:nth-child(4):hover ~ #option-bg {
     top: 120px;
-    background-color: #32c766;
+    background-color: #000000;
   }
   
   .option:nth-child(5):hover ~ #option-bg {
     top: 160px;
-    background-color: #f48024;
+    background-color: #000000;
   }
   
   .option:nth-child(6):hover ~ #option-bg {
     top: 200px;
-    background-color: #006400;
+    background-color: #000000;
     border-radius: 0 0 4px 4px;
   }
   
