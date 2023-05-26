@@ -4,58 +4,12 @@ import { Link } from 'react-router-dom';
 import './../../style.css';
 import './../../menu.css';
 import { changeNextMonth, changePrevMonth, curMonth, dayIncluded } from '../../calendar';
-import CalendarDates from "calendar-dates";
+//import CalendarDates from "calendar-dates";
 import { createTable } from '../../table';
-import { Week } from '../elements/week';
+//import { Week } from '../elements/week';
 // import './../../index';
 
-import { Async } from 'react-async';
 
-const setCalendar = async () =>{
-  let calendarDates = new CalendarDates();
-  let includedDates = await calendarDates.getMatrix(new Date());
-  return(
-    <div className="calendar">
-        <header>
-
-          <h2>{curMonth()}</h2>
-
-          <button className="btn-prev fontawesome-angle-left" onClick={changePrevMonth}></button>
-          <button className="btn-next fontawesome-angle-right" onClick={changeNextMonth}></button>
-
-        </header>
-
-        <table>
-
-          <thead>
-
-            <tr className="dow">
-
-              <td>Su</td>
-              <td>Mo</td>
-              <td>Tu</td>
-              <td>We</td>
-              <td>Th</td>
-              <td>Fr</td>
-              <td>Sa</td>
-
-            </tr>
-
-          </thead>
-
-          <tbody>
-            {/* {
-              //creates a array of tr elements 
-            includedDates.map(e => (
-              <Week week = {e}/>
-            ))
-            } */}
-          </tbody>
-
-        </table>
-      </div>
-  )
-}
 
 const HomePageView = () => {
   return (
@@ -77,14 +31,14 @@ const HomePageView = () => {
             <div className="option">
               <input className="s-c top" type="radio" name="platform" value="yearly"></input>
               <input className="s-c bottom" type="radio" name="platform" value="yearly"></input>
-              <i className="fa-regular fa-calendar" style={{color: "#f15025"}}></i>
+              <i className="fa-regular fa-calendar" style={{ color: "#f15025" }}></i>
               <span className="label">Yearly</span>
               <span className="opt-val">Yearly</span>
             </div>
             <div className="option">
               <input className="s-c top" type="radio" name="platform" value="monthly"></input>
               <input className="s-c bottom" type="radio" name="platform" value="monthly"></input>
-              <i className="fa-regular fa-calendar" style={{color: "#f15025"}}></i>
+              <i className="fa-regular fa-calendar" style={{ color: "#f15025" }}></i>
               <span className="label">Monthly</span>
               <span className="opt-val">Monthly</span>
             </div>
@@ -121,13 +75,13 @@ const HomePageView = () => {
         </div>
       </form>
 
-      {/* <Async promiseFn={setCalendar}>
-        <Async.Loading>{() => {return(<p>Loading...</p>)}}</Async.Loading>
-        <Async.Fulfilled>{data => {return ({data})}}</Async.Fulfilled>
-        <Async.Rejected>{error => {return ({error})}}</Async.Rejected>
-      </Async> */}
+      <div id="calendar">
+        <p id="monthLabel"></p>
+        <div id="calendarGrid">
 
-
+        </div>
+      </div>
+      {/*
       <div className="calendar">
         <header>
 
@@ -217,7 +171,7 @@ const HomePageView = () => {
           </tbody>
 
         </table>
-      </div>
+      </div>*/}
       <Link to={'/instructors'} > All Instructors </Link>
       <Link to={'/courses'} > All Courses </Link>
     </div>

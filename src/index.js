@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import './calendar.css';
+import './loadInitial.js';
+import './onDayClick.js';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

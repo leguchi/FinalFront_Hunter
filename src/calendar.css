@@ -1,0 +1,81 @@
+/* fontawesome */
+[class*="fontawesome-"]:before {
+    font-family: 'FontAwesome', sans-serif;
+}
+
+#calendar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 22px;
+    text-align: center;
+    place-self: center;
+    margin: 6vh;
+    position: relative;
+}
+
+#monthLabel {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: 'Prompt', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3vw;
+    margin: 1.5vw;
+}
+
+#calendarGrid {
+    display: grid;
+    grid-template-columns: repeat(7, 42px);
+    grid-gap: 8px;
+    justify-items: center;
+    justify-content: center;
+}
+
+.weekday {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Prompt', sans-serif;
+    font-style: normal;
+    border-radius: 15%;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.weekday p {
+    line-height: 16px;
+    color: #F15025;
+}
+
+.day {
+    display: table-cell;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: antiquewhite;
+    text-align: center;
+}
+
+.day p {
+    line-height: 32px;
+}
+
+p {
+    text-align: center;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.current {
+    color: #000000;
+}
+
+/*.day:nth-child(7n + 1) {}*/
+
+.next,
+.previous {
+    color: #b6b6b6;
+}
