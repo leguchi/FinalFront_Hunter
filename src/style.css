@@ -45,7 +45,7 @@
     color: #FFFFFF;
 }
 
-.calendar tbody td:hover {
+.calendar tbody .date:hover {
     border: 2px solid #00addf;
 }
 
@@ -53,7 +53,7 @@
     color: #F15025;
 }
 
-.calendar td {
+.calendar .date {
     border: 2px solid transparent;
     border-radius: 50%;
     display: inline-block;

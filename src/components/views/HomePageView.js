@@ -159,59 +159,59 @@ const HomePageView = () => {
           <tbody>{createTable()}
 
             <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td className='date'>0</td>
+              <td className='date'>0</td>
+              <td className='date'>0</td>
+              <td className='date'>0</td>
+              <td className='date'>0</td>
+              <td className='date'>0</td>
+              <td className='date'>0</td>
             </tr>
             <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td className='date'>0</td>
+              <td className='date'>0</td>
+              <td className='date'>0</td>
+              <td className='date'>0</td>
+              <td className='date'>0</td>
+              <td className='date'>0</td>
+              <td className='date'>0</td>
             </tr>
             <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td className='date'>0</td>
+              <td className='date'>0</td>
+              <td className='date'>0</td>
+              <td className='date'>0</td>
+              <td className='date'>0</td>
+              <td className='date'>0</td>
+              <td className='date'>0</td>
             </tr>
             <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td className='date'>0</td>
+              <td className='date'>0</td>
+              <td className='date'>0</td>
+              <td className='date'>0</td>
+              <td className='date'>0</td>
+              <td className='date'>0</td>
+              <td className='date'>0</td>
             </tr>
 
             <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td className='date'>0</td>
+              <td className='date'>0</td>
+              <td className='date'>0</td>
+              <td className='date'>0</td>
+              <td className='date'>0</td>
+              <td className='date'>0</td>
+              <td className='date'>0</td>
             </tr>
             <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td className='date'>0</td>
+              <td className='date'>0</td>
+              <td className='date'>0</td>
+              <td className='date'>0</td>
+              <td className='date'>0</td>
+              <td className='date'>0</td>
+              <td className='date'>0</td>
             </tr>
 
           </tbody>
